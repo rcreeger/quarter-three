@@ -22,9 +22,9 @@ class App extends Component {
             <Route
               path="/"
               exact
-              render={() => <Home setUser={this.setUser} />}
+              render={props => <Home setUser={this.setUser} {...props} />}
             />
-            <Route path="/chat/" component={Chat} />
+            <Route path="/chat" component={Chat} />
           </div>
         </Router>
       </div>

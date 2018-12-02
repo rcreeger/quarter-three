@@ -30,24 +30,8 @@ export default class Example extends React.Component {
   render() {
     return (
       <div>
-        <Navbar color="success" light expand="md">
+        <Navbar color="light" light expand="md">
           <NavbarBrand href="/">MessageMe</NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Click this!
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>Log In</DropdownItem>
-                  <DropdownItem>About</DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>FAQ</DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-            </Nav>
-          </Collapse>
         </Navbar>
       </div>
     );
